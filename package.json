@@ -1,7 +1,7 @@
 {
-  "name": "@atmus/nestjs-stripe",
+  "name": "@atmus/nestjs-elevenlabs",
   "version": "0.1.0",
-  "description": "NestJS - Stripe integration",
+  "description": "NestJS - Elevenlabs integration",
   "author": "Felipe Medeiros <medeiros.dev@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
@@ -25,18 +25,18 @@
   ],
   "keywords": [
     "nestjs",
-    "stripe",
-    "nestjs-stripe"
+    "elevenlabs",
+    "nestjs-elevenlabs"
   ],
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atmus-tecnologia/nestjs-stripe.git"
+    "url": "git+https://github.com/atmus-tecnologia/nestjs-elevenlabs.git"
   },
   "bugs": {
-    "url": "https://github.com/atmus-tecnologia/nestjs-stripe"
+    "url": "https://github.com/atmus-tecnologia/nestjs-elevenlabs"
   },
   "peerDependencies": {
     "@nestjs/common": "^10.0.0",
@@ -96,5 +96,5 @@
     }
   },
   "types": "./dist/index.d.ts",
-  "homepage": "https://github.com/atmus-tecnologia/nestjs-stripe#readme"
+  "homepage": "https://github.com/atmus-tecnologia/nestjs-elevenlabs#readme"
 }
