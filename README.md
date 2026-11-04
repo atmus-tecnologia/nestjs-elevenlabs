@@ -4,10 +4,8 @@ NestJS HTTP helpers for ElevenLabs voices, text-to-speech audio, streaming, mode
 
 ## Installation
 
-Version 1.0.0 is distributed through GitHub Releases. It has not been published to npm yet; use the archive URL below.
-
 ```sh
-npm install https://github.com/atmus-tecnologia/nestjs-elevenlabs/releases/download/v1.0.0/atmus-nestjs-elevenlabs-1.0.0.tgz @nestjs/common reflect-metadata rxjs
+npm install @atmus/nestjs-elevenlabs@1.0.0 @nestjs/common reflect-metadata rxjs
 ```
 
 Use the same Nest major as your application. Upgrading from a previous release? Read [MIGRATION.md](MIGRATION.md) first.
