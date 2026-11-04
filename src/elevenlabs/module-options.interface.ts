@@ -5,6 +5,6 @@ export type ElevenLabsModuleOptions = {
 };
 
 export interface ElevenLabsModuleAsyncOptions extends Pick<ModuleMetadata, 'imports'> {
-  useFactory?: (...args: any[]) => Promise<ElevenLabsModuleOptions> | ElevenLabsModuleOptions;
+  useFactory: (...args: any[]) => Promise<ElevenLabsModuleOptions> | ElevenLabsModuleOptions;
   inject?: any[];
 }

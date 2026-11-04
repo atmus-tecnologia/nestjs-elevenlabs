@@ -11,7 +11,7 @@ export class ElevenlabsModule {
       module: ElevenlabsModule,
       imports: [
         HttpModule.register({
-          baseURL: 'https://api.elevenlabs.io/v1',
+          baseURL: 'https://api.elevenlabs.io/v1', timeout: 30000,
         }),
       ],
       providers: [
@@ -26,10 +26,11 @@ export class ElevenlabsModule {
   }
 
   static registerAsync(options: ElevenLabsModuleAsyncOptions): DynamicModule {
+    if (!options.useFactory) throw new Error('ElevenlabsModule.registerAsync requires useFactory');
     const asyncProviders = this.createAsyncProviders(options);
     return {
       module: ElevenlabsModule,
-      imports: options.imports || [],
+      imports: [...(options.imports || []), HttpModule.register({ baseURL: 'https://api.elevenlabs.io/v1', timeout: 30000 })],
       providers: [...asyncProviders, ElevenlabsService],
       exports: [ElevenlabsService],
     };
